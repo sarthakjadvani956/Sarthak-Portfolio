@@ -99,6 +99,13 @@ cite b{color:var(--ink);font-weight:600}
 .links{display:flex;gap:20px;margin-top:28px;font:500 15px "Inter",sans-serif;flex-wrap:wrap}
 .links a{color:var(--mute);text-decoration:none}
 .links a:hover{color:var(--acc)}
+.links .mail{display:inline-flex;align-items:center;gap:8px}
+.links .mail svg{width:18px;height:18px}
+.dcard{display:flex;align-items:center;justify-content:space-between;gap:24px;flex-wrap:wrap;border:1px solid var(--line);border-radius:20px;padding:32px;background:radial-gradient(120% 140% at 100% 0%,#e3eaff 0%,#f5f7ff 45%,#fff 80%)}
+.dcard h3{margin:0 0 6px;font-weight:600;font-size:clamp(22px,3.4vw,30px);letter-spacing:-.03em;line-height:1.2}
+.dcard p{margin:0;color:var(--mute);font-size:16px;max-width:44ch}
+.dcard .btn svg{width:16px;height:16px}
+@media(max-width:760px){.dcard{padding:24px 22px}}
 footer{border-top:1px solid var(--line);padding:28px 0 40px;font-size:14px;color:var(--mute)}
 @media(max-width:760px){
 body{font-size:16.5px}
@@ -126,6 +133,7 @@ section>h2{position:static}
       <a href="#process">Process</a>
       <a href="#journey">Journey</a>
       <a href="#story">Story</a>
+      <a href="#designs">Designs</a>
       <a class="btn p" href="https://cal.com/sarthakjadvani/30min">Book a call</a>
     </nav>
   </div>
@@ -284,6 +292,19 @@ section>h2{position:static}
     </div>
   </section>
 
+  <section id="designs">
+    <h2>Design portfolio</h2>
+    <div class="dcard">
+      <div>
+        <h3>See more of my designs</h3>
+        <p>Screens, UI explorations and visual work, all in one place on Dribbble.</p>
+      </div>
+      <a class="btn p" href="https://dribbble.com/Sarthakjadvani" target="_blank" rel="noopener">View on Dribbble
+        <svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 12L12 4M5.5 4H12v6.5"/></svg>
+      </a>
+    </div>
+  </section>
+
   <section id="contact" class="contact">
     <h2>Contact</h2>
     <div>
@@ -294,11 +315,11 @@ section>h2{position:static}
         <a class="btn" href="https://www.linkedin.com/in/sarthakjadvani">LinkedIn</a>
       </div>
       <div class="links">
-        <a href="https://dribbble.com/Sarthakjadvani">Dribbble</a>
-        <a href="mailto:sarthakjadvani956@gmail.com">sarthakjadvani956@gmail.com</a>
+        <a class="mail" href="mailto:sarthakjadvani956@gmail.com"><svg viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="2.5" y="4.5" width="15" height="11" rx="2"/><path d="M3 6l7 5 7-5"/></svg>sarthakjadvani956@gmail.com</a>
       </div>
     </div>
   </section>
+
 
 </main>
 
